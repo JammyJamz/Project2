@@ -1,0 +1,33 @@
+.background    { background: black;
+                 table-layout: fixed;
+                 border-spacing: 0;   }
+.background td { padding: 0;          }
+.lava          { background-color: #730046;
+                }
+.wall          { background-image: url("images/cave.png");   }
+.actor  { position: absolute;  }
+.coin   { background-image:url("images/crystal.png");
+          background-size: 12px 12px;}
+.projectile{ background-image: url("images/2nd.png");
+             background-size: 12px 12px;}
+.player { background-image: url("images/player.png");
+          background-size: 30px 30px;}
+.bounce { background-image: url("images/jump-pad.png");
+          background-size: 20px 20px;}
+.slip{ background-image:url("images/ice.png");
+      background-size: 20px 20px;}
+.dark{background-image: url("images/lava.png");
+      background-size: 20px 50px}
+.game {
+  overflow: hidden;
+  max-width: 600px;
+  max-height: 450px;
+  position: relative;
+}
+
+.lost .player {
+  background: rgb(160, 64, 64);
+}
+.won .player {
+  box-shadow: -4px -7px 8px white, 4px -7px 8px white;
+}
